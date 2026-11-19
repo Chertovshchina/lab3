@@ -1,12 +1,7 @@
-numbers = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-print("Первый элемент:", numbers[0])
-print("Третий элемент:", numbers[2])
-print("Последний элемент:", numbers[-1])
-
-numbers[1] = 25
-numbers.append(110)
-numbers.remove(50)
-
-print("Итоговый список:", numbers)
-print("Количество элементов:", len(numbers))
+print("Первые три элемента:", numbers[:3])
+print("Последние три элемента:", numbers[-3:])
+print("Элементы с 3-го по 7-й:", numbers[2:7])
+print("Каждый второй элемент:", numbers[::2])
+print("Список в обратном порядке:", numbers[::-1])
