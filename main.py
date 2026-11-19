@@ -1,10 +1,12 @@
-value = 10
+numbers = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 
-def example():
-    value = 20
-    local = 50
-    print(value)
+print("Первый элемент:", numbers[0])
+print("Третий элемент:", numbers[2])
+print("Последний элемент:", numbers[-1])
 
-example()
-print(value)
-print(local)
+numbers[1] = 25
+numbers.append(110)
+numbers.remove(50)
+
+print("Итоговый список:", numbers)
+print("Количество элементов:", len(numbers))
