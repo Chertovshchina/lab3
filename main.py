@@ -1,7 +1,7 @@
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+measurements = (12.5, 14.0, 11.8, 15.2, 13.7, 16.1, 14.9, 12.3)
 
-print("Первые три элемента:", numbers[:3])
-print("Последние три элемента:", numbers[-3:])
-print("Элементы с 3-го по 7-й:", numbers[2:7])
-print("Каждый второй элемент:", numbers[::2])
-print("Список в обратном порядке:", numbers[::-1])
+print("Первый элемент:", measurements[0])
+print("Последний элемент:", measurements[-1])
+print("Срез со 2-го по 5-й элемент:", measurements[1:5])
+
+measurements[0] = 99.9
