@@ -1,17 +1,10 @@
-def calculate_rectangle(width, height):
-    return width * height
+value = 10
 
+def example():
+    value = 20
+    local = 50
+    print(value)
 
-def calculate_perimeter(width, height):
-    return 2 * (width + height)
-
-
-def describe_rectangle(width, height, unit="см"):
-    print(f"Прямоугольник: ширина {width} {unit}, высота {height} {unit}")
-
-
-print(calculate_rectangle(5, 3))
-print(calculate_perimeter(5, 3))
-
-describe_rectangle(5, 3)
-describe_rectangle(10, 4, unit="м")
+example()
+print(value)
+print(local)
