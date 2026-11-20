@@ -1,12 +1,22 @@
-def find_element(numbers, target):
-    for i in range(len(numbers)):
-        if numbers[i] == target:
-            return i
-    return -1
+def analyze(numbers):
+    minimum = numbers[0]
+    maximum = numbers[0]
+    total = 0
+
+    for num in numbers:
+        if num < minimum:
+            minimum = num
+        if num > maximum:
+            maximum = num
+        total += num
+
+    average = total / len(numbers)
+    return minimum, maximum, average
 
 
-data = [10, 20, 30, 40, 50, 60, 70]
+numbers = [5, 12, 8, 21, 34, 17, 9, 44, 3, 27]
+mn, mx, avg = analyze(numbers)
 
-print("Список:", data)
-print("Индекс элемента 40:", find_element(data, 40))
-print("Индекс элемента 99:", find_element(data, 99))
+print("Минимальное значение:", mn)
+print("Максимальное значение:", mx)
+print("Среднее арифметическое:", avg)
