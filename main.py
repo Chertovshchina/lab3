@@ -1,15 +1,29 @@
-numbers = [42, 15, 8, 93, 27, 4, 61, 19, 75, 30]
+def calculate_sum(numbers):
+    total = 0
+    for num in numbers:
+        total += num
+    return total
 
-print("Исходный список:", numbers)
-print("Количество элементов:", len(numbers))
-print("Сумма элементов:", sum(numbers))
-print("Минимальное значение:", min(numbers))
-print("Максимальное значение:", max(numbers))
-print("Среднее арифметическое:", sum(numbers) / len(numbers))
 
-sorted_copy = sorted(numbers)
-print("Отсортированная копия sorted():", sorted_copy)
-print("Исходный список после sorted():", numbers)
+def find_min(numbers):
+    minimum = numbers[0]
+    for num in numbers:
+        if num < minimum:
+            minimum = num
+    return minimum
 
-numbers.sort()
-print("Исходный список после метода sort():", numbers)
+
+def find_max(numbers):
+    maximum = numbers[0]
+    for num in numbers:
+        if num > maximum:
+            maximum = num
+    return maximum
+
+
+data = [42, 15, 8, 93, 27, 4, 61]
+
+print("Список:", data)
+print("Сумма (своя функция):", calculate_sum(data), "| sum():", sum(data))
+print("Минимум (своя функция):", find_min(data), "| min():", min(data))
+print("Максимум (своя функция):", find_max(data), "| max():", max(data))
