@@ -1,11 +1,15 @@
-measurements = (12.5, 14.0, 11.8, 15.2, 13.7, 16.1, 14.9, 12.3)
+numbers = [42, 15, 8, 93, 27, 4, 61, 19, 75, 30]
 
-first, second = measurements[0], measurements[1]
-print("Первое значение:", first)
-print("Второе значение:", second)
+print("Исходный список:", numbers)
+print("Количество элементов:", len(numbers))
+print("Сумма элементов:", sum(numbers))
+print("Минимальное значение:", min(numbers))
+print("Максимальное значение:", max(numbers))
+print("Среднее арифметическое:", sum(numbers) / len(numbers))
 
-temp_list = list(measurements)
-temp_list[0] = 99.9
-measurements = tuple(temp_list)
+sorted_copy = sorted(numbers)
+print("Отсортированная копия sorted():", sorted_copy)
+print("Исходный список после sorted():", numbers)
 
-print("Обновлённый кортеж:", measurements)
+numbers.sort()
+print("Исходный список после метода sort():", numbers)
